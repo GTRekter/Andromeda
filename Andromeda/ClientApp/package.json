@@ -1,0 +1,31 @@
+{
+  "name": "Andromeda",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^3.4.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.4.1",
+    "materialize-css": "^1.0.0-rc.2",
+    "owl.carousel": "^2.3.4",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-fontawesome": "^1.6.1",
+    "react-owl-carousel": "^2.3.1",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.0.17",
+    "react-scroll": "^1.7.14",
+    "rimraf": "^2.6.2",
+    "script-loader": "^0.7.2",
+    "sweetalert2": "^8.18.3"
+  },
+  "scripts": {
+    "start": "rimraf ./build && react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.3.31"
+  }
+}

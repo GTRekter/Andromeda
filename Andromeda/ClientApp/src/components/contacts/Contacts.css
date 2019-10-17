@@ -1,0 +1,192 @@
+﻿/* 
+ * --------------------------------------
+ * Contact
+ * --------------------------------------
+ */
+
+.cvitae-contact {
+    background: #f5f5f5;
+    margin-bottom: 0;
+}
+
+    .cvitae-contact .cvitae-section-content {
+        background: #fff;
+    }
+
+    .cvitae-contact .content-right {
+        border: 1px solid #f2f2f2;
+    }
+
+        .cvitae-contact .content-right .row {
+            margin: 0;
+        }
+
+        .cvitae-contact .content-right .form-input {
+            margin-bottom: 20px;
+        }
+
+            .cvitae-contact .content-right .form-input input {
+                display: block;
+                width: 100%;
+                height: 50px;
+                -webkit-transition: border-color .5s;
+                -moz-transition: border-color .5s;
+                transition: border-color .5s;
+                font-size: 14px;
+                font-weight: 400;
+            }
+
+                .cvitae-contact .content-right .form-input input:focus {
+                    outline: none;
+                    border-color: #d3d3d3;
+                }
+
+        .cvitae-contact .content-right .form-textarea {
+            display: table-cell;
+            width: 900px
+        }
+
+            .cvitae-contact .content-right .form-textarea textarea {
+                height: 190px;
+                display: block;
+                border: 1px solid #f2f2f2;
+                padding: 15px 0;
+                font-size: 14px;
+                width: 100%;
+                border: 1px solid #f2f2f2;
+                resize: none;
+                -webkit-transition: border-color .5s;
+                -moz-transition: border-color .5s;
+                transition: border-color .5s;
+            }
+
+                .cvitae-contact .content-right .form-textarea textarea:focus {
+                    outline: none;
+                    border-color: #d3d3d3;
+                }
+
+        .cvitae-contact .content-right .form-submit {
+            display: table-cell;
+            width: 100px !important;
+            position: relative;
+        }
+
+            .cvitae-contact .content-right .form-submit button {
+                top: 0;
+                bottom: 0;
+                width: 100%;
+                position: absolute;
+                border: 0;
+                cursor: pointer;
+                font-size: 0;
+                overflow: hidden;
+                background: #f2f2f2;
+            }
+
+                .cvitae-contact .content-right .form-submit button:after {
+                    display: block;
+                    content: "\f105";
+                    font-family: 'fontawesome';
+                    font-size: 40px;
+                    color: #f2f2f2;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    -webkit-transform: translate(-50%, -50%);
+                    -moz-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+                }
+
+            .cvitae-contact .content-right .form-submit:hover button {
+                background-color: #ddd;
+            }
+
+                .cvitae-contact .content-right .form-submit:hover button:after {
+                    color: #fff;
+                }
+
+            .cvitae-contact .content-right .form-submit button:focus,
+            .cvitae-contact .content-right .form-submit button:active {
+                outline: none;
+            }
+
+        .cvitae-contact .content-right .form-submit,
+        .cvitae-contact .content-right .form-input,
+        .cvitae-contact .content-right .form-textarea {
+            position: relative;
+        }
+
+            .cvitae-contact .content-right .form-input input,
+            .cvitae-contact .content-right .form-textarea textarea {
+                border: 0;
+                border-bottom: 1px solid #f2f2f2;
+                box-shadow: none;
+            }
+
+            .cvitae-contact .content-right .form-submit button {
+                background: #fff;
+                border: 1px solid #f2f2f2;
+            }
+
+            .cvitae-contact .content-right .form-submit .underline,
+            .cvitae-contact .content-right .form-input .underline,
+            .cvitae-contact .content-right .form-textarea .underline {
+                height: 1px;
+                width: 0;
+                display: block;
+                content: '';
+                background: #ababab;
+                z-index: 11;
+                position: absolute;
+                border: 0;
+                -webkit-transition: width .3s;
+                -moz-transition: width .3s;
+                transition: width .3s;
+                bottom: 0;
+            }
+
+            .cvitae-contact .content-right .form-input input:focus + .underline,
+            .cvitae-contact .content-right .form-textarea textarea:focus + .underline {
+                width: 100%;
+            }
+
+            .cvitae-contact .content-right .form-submit:hover .underline {
+                width: 100%;
+            }
+
+@media (max-width: 767px) {
+
+    .cvitae-contact .content-right .row {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+        .cvitae-contact .content-right .row .s6 {
+            width: 100%;
+        }
+
+    .cvitae-contact .content-right .form-textarea {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .cvitae-contact .content-right .form-submit {
+        display: block;
+        padding: 0;
+        height: 50px;
+        width: 100% !important;
+    }
+
+        .cvitae-contact .content-right .form-submit button {
+            font-size: 20px;
+            padding: 10px;
+            border-top: 0;
+            border-left: 0;
+            border-right: 0;
+        }
+
+            .cvitae-contact .content-right .form-submit button:after {
+                display: none;
+            }
+}

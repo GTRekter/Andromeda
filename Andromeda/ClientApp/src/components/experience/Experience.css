@@ -1,0 +1,139 @@
+﻿/* 
+ * --------------------------------------
+ * Experience
+ * --------------------------------------
+ */
+
+.cvitae-experience {
+    margin-bottom: 80px;
+}
+
+    .cvitae-experience .content-right {
+        background: #ebebeb;
+        vertical-align: top;
+    }
+
+        .cvitae-experience .content-right .collapsible {
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, .1);
+        }
+
+            .cvitae-experience .content-right .collapsible .collapsible-header {
+                font-size: 14px;
+                font-weight: 700;
+                letter-spacing: 2px;
+                line-height: 70px;
+                padding-left: 90px;
+                position: relative;
+                text-transform: uppercase;
+                -webkit-transition: color .3s;
+                -moz-transition: color .3s;
+                transition: color .3s;
+            }
+
+                .cvitae-experience .content-right .collapsible .collapsible-header:hover {
+                    color: #00A4EF;
+                }
+
+                .cvitae-experience .content-right .collapsible .collapsible-header:before {
+                    border-right: 1px solid #ebebeb;
+                    color: #00A4EF;
+                    content: "\f0b1";
+                    display: block;
+                    font-family: 'fontawesome';
+                    font-size: 20px;
+                    font-weight: 400;
+                    height: 70px;
+                    left: 0;
+                    line-height: 70px;
+                    position: absolute;
+                    text-align: center;
+                    text-align: center;
+                    width: 70px;
+                }
+
+                .cvitae-experience .content-right .collapsible .collapsible-header .degree {
+                    color: #a1a1a1;
+                    text-transform: lowercase;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                }
+                .cvitae-experience .content-right .collapsible .collapsible-header .company {
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    max-width: 199px;
+                }
+
+                .cvitae-experience .content-right .collapsible .collapsible-header .year {
+                    color: #a1a1a1;
+                    padding-left: 5px;
+                }
+
+            .cvitae-experience .content-right .collapsible .collapsible-body {
+                background: #fefefe;
+            }
+
+                .cvitae-experience .content-right .collapsible .collapsible-body .details .title {
+                    margin-top: 3px;
+                }
+
+                .cvitae-experience .content-right .collapsible .collapsible-body .details .title {
+                    font-weight: 600;
+                    padding-right: 5px;
+                }
+
+    .cvitae-experience .content-left .view-all {
+        background-color: #00A4EF;
+        border-radius: 25px 50px 0 25px;
+        color: #fff;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 45px;
+        padding: 0 50px 0 30px;
+        text-transform: uppercase;
+        -webkit-transition: background-color .3s;
+        -moz-transition: background-color .3s;
+        transition: background-color .3s;
+        cursor: pointer;
+    }
+
+        .cvitae-experience .content-left .view-all:hover {
+            background-color: #000;
+        }
+
+@media (max-width: 767px) {
+
+    .cvitae-experience .content-right {
+        padding: 0;
+        display: block;
+    }
+
+        .cvitae-experience .content-right .collapsible {
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, .1);
+            margin: 0;
+            border-left: 0;
+            border-right: 0;
+        }
+
+    .cvitae-experience .content-right .collapsible .collapsible-header {
+        line-height: 25px;
+        padding: 20px 0;
+        letter-spacing: 1px;
+        padding-left: 50px;
+        padding-right: 50px;
+        position: relative;
+        -webkit-transition: color .3s;
+        -moz-transition: color .3s;
+        transition: color .3s;
+        min-height: auto;
+    }
+        
+        .cvitae-experience .content-right .collapsible .collapsible-header:before {
+            display: none;
+        }
+
+        .cvitae-experience .content-right .collapsible .collapsible-header .company {
+            max-width: 105px;
+        }
+}

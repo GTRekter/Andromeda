@@ -1,0 +1,149 @@
+﻿/* 
+ * --------------------------------------
+ * Navigation
+ * --------------------------------------
+ */
+
+.cvitae-menu-wrapper {
+    height: 91px;
+    margin-bottom: -91px;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+    .cvitae-menu-wrapper.slider-bottom {
+        margin-bottom: 90px;
+        margin-top: -180px;
+    }
+
+    .cvitae-menu-wrapper.bottom {
+        margin-bottom: 90px;
+        margin-top: -90px;
+    }
+
+.cvitae-main-nav {
+    background: #FFFFFF;
+    box-shadow: none;
+    display: block;
+    height: 70px;
+    overflow: hidden;
+    top: 0px;
+    position: fixed;
+    -webkit-transition: height .3s, top .3s;
+    -moz-transition: height .3s, top .3s;
+    transition: height .3s, top .3s;
+}
+
+    .cvitae-main-nav ul {
+        border-collapse: collapse;
+        display: table;
+        height: 70px;
+        table-layout: fixed;
+        width: 100%;
+        -webkit-transition: background-color .3s;
+        -moz-transition: background-color .3s;
+        transition: background-color .3s;
+    }
+
+        .cvitae-main-nav ul li {
+            border: 1px solid #464646;
+            clear: both;
+            display: table-cell;
+            float: none;
+            font-weight: 700;
+            letter-spacing: 2px;
+            overflow: hidden;
+            padding: 0;
+            position: relative;
+            text-align: center;
+            text-transform: uppercase;
+            -webkit-transition: letter-spacing .2s, border-color .3s;
+            -moz-transition: letter-spacing .2s, border-color .3s;
+            transition: letter-spacing .2s, border-color .3s;
+            width: 11.111%;
+            z-index: 0;
+        }
+
+            .cvitae-main-nav ul li:after {
+                background: #00A4EF;
+                bottom: -1px;
+                content: '';
+                display: block;
+                height: 2px;
+                left: 0;
+                position: absolute;
+                -webkit-transition: width .3s;
+                -moz-transition: width .3s;
+                transition: width .3s;
+                width: 0;
+            }
+
+            .cvitae-main-nav ul li:hover:after {
+                width: 100%;
+            }
+
+            .cvitae-main-nav ul li:hover {
+                letter-spacing: 2px;
+            }
+
+            .cvitae-main-nav ul li a {
+                color: #00A4EF;
+                display: block;
+                font-size: 15px;
+                line-height: 70px;
+                white-space: nowrap;
+                -webkit-transition: line-height .3s;
+                -moz-transition: line-height .3s;
+                transition: line-height .3s;
+            }
+
+                .cvitae-main-nav ul li a:hover {
+                    background-color: transparent;
+                }
+
+            .cvitae-main-nav ul li.cvitae-home {
+                overflow: visible;
+                width: 16%;
+            }
+
+                .cvitae-main-nav ul li.cvitae-home:before {
+                    background-color: #00A4EF;
+                    bottom: -1px;
+                    content: '';
+                    display: block;
+                    left: 1px;
+                    position: absolute;
+                    right: -1px;
+                    top: -1px;
+                    -webkit-transition: background-color .3s;
+                    -moz-transition: background-color .3s;
+                    transition: background-color .3s;
+                    z-index: -1;
+                }
+
+        .cvitae-main-nav ul li {
+            border: none;
+            box-shadow: 1px 0 0 0 #f2f2f2 inset, 0 1px 0 0 #f2f2f2 inset, 0 -1px 0 0 #f2f2f2 inset;
+        }
+
+            .cvitae-main-nav ul li.cvitae-home:after {
+                display: none;
+            }
+
+            .cvitae-main-nav ul li.cvitae-home a {
+                color: #FFFFFF;
+            }
+
+
+@media (min-width: 992px) {
+    .cvitae-menu-wrapper {
+        display: block;
+    }
+}
+
+@media (max-width: 991px) {
+    .cvitae-menu-wrapper {
+        display: none !important;
+    }
+}

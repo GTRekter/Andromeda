@@ -1,0 +1,116 @@
+﻿/* 
+ * --------------------------------------
+ * Skills
+ * --------------------------------------
+ */
+.cvitae-skills .hi-lights li {
+    border-bottom: 1px solid #f2f2f2;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+    .cvitae-skills .hi-lights li:before {
+        color: #00A4EF;
+        content: '+';
+        padding-right: 5px;
+    }
+
+.cvitae-skills .content-right {
+    border: 1px solid #f2f2f2;
+}
+
+.cvitae-skills .progress-bar-container {
+    display: table;
+    width: 100%;
+}
+
+    .cvitae-skills .progress-bar-container .progress {
+        background: #fff;
+        display: table-row;
+    }
+
+        .cvitae-skills .progress-bar-container .progress .progress-title,
+        .cvitae-skills .progress-bar-container .progress .progress-bar {
+            display: table-cell;
+            height: 60px;
+            padding-right: 30px;
+            position: relative;
+            vertical-align: top;
+        }
+
+        .cvitae-skills .progress-bar-container .progress:last-child .progress-title,
+        .cvitae-skills .progress-bar-container .progress:last-child .progress-bar {
+            height: 20px;
+        }
+
+        .cvitae-skills .progress-bar-container .progress .progress-title {
+            color: #747474;
+            font-size: 14px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            top: 1px;
+        }
+
+        .cvitae-skills .progress-bar-container .progress .progress-bar {
+            position: relative;
+            width: 85%;
+            z-index: 0;
+        }
+
+            .cvitae-skills .progress-bar-container .progress .progress-bar:before {
+                background: #f2f2f2;
+                border-radius: 25px 0 50px 25px;
+                content: '';
+                display: block;
+                height: 10px;
+                position: absolute;
+                top: 3px;
+                width: 100%;
+                z-index: -1;
+            }
+
+            .cvitae-skills .progress-bar-container .progress .progress-bar .bar {
+                background: #ddd;
+                border-radius: 25px 0 50px 25px;
+                display: block;
+                height: 10px;
+                position: relative;
+                top: 3px;
+                width: 0;
+            }
+
+            .cvitae-skills .progress-bar-container .progress .progress-bar .text {
+                color: #00A4EF;
+                font-size: 16px;
+                margin-left: -30px;
+                position: absolute;
+                top: -20px;
+            }
+
+                .cvitae-skills .progress-bar-container .progress .progress-bar .text:after {
+                    content: '%';
+                }
+/* 
+ * --------------------------------------
+ * Responsive
+ * --------------------------------------
+ */
+
+@media (max-width: 991px) {
+    .cvitae-skills .content-right {
+        border-top: 1px solid #f2f2f2;
+    }
+}
+
+@media (max-width: 767px) {
+    .cvitae-skills .progress-bar-container .progress .progress-title,
+    .cvitae-skills .progress-bar-container .progress .progress-bar {
+        display: block;
+        width: 100%;
+    }
+    .cvitae-skills .progress-bar-container .progress:last-child .progress-title {
+        height: 60px;
+    }
+}

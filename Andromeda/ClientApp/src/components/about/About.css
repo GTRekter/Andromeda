@@ -1,0 +1,149 @@
+﻿.cvitae-about-me {
+    margin-bottom: 80px;
+}
+
+    .cvitae-about-me .content-left {
+        border: 1px solid #f2f2f2;
+        padding: 20px 30px;
+        vertical-align: top;
+    }
+
+    .cvitae-about-me .short-bio .pic {
+        display: block;
+        margin-bottom: 30px;
+        margin-left: -30px;
+        margin-right: -30px;
+        margin-top: -20px;
+    }
+
+    .cvitae-about-me .short-bio p {
+        line-height: 1.9;
+    }
+
+    .cvitae-about-me .content-right {
+        border-right: 0;
+        border: 1px solid #f2f2f2;
+        width: auto;
+    }
+
+    .cvitae-about-me .info {
+        display: table;
+        font-size: 13px;
+        margin-bottom: 35px;
+        position: relative;
+        table-layout: fixed;
+        width: 100%;
+    }
+
+        .cvitae-about-me .info:last-child {
+            margin-bottom: 0;
+        }
+
+            .cvitae-about-me .info:last-child .field-value:after {
+                display: none;
+            }
+
+        .cvitae-about-me .info span {
+            display: table-cell;
+            position: relative;
+        }
+
+        .cvitae-about-me .info .field-title {
+            width: 70px;
+        }
+
+        .cvitae-about-me .info .field-separator {
+            text-align: center;
+            width: 80px;
+        }
+
+        .cvitae-about-me .info .field-value:after {
+            background: #f2f2f2;
+            bottom: -18px;
+            content: '';
+            display: block;
+            height: 1px;
+            left: 0;
+            position: absolute;
+            width: 100%;
+        }
+
+    .cvitae-about-me .links {
+        display: table-cell;
+        font-size: 0;
+        width: 81px;
+    }
+
+        .cvitae-about-me .links a {
+            box-shadow: 1px 0 0 0 #f2f2f2, 0 1px 0 0 #f2f2f2, 0 1px 0 0 #f2f2f2 inset;
+            display: block;
+            height: 83px;
+            position: relative;
+            text-align: center;
+        }
+
+            .cvitae-about-me .links a:first-child {
+                box-shadow: 1px 0 0 0 #f2f2f2, 0 1px 0 0 #f2f2f2;
+            }
+
+            .cvitae-about-me .links a i {
+                font-size: 20px;
+                line-height: 80px;
+                -webkit-transition: color .3s;
+                -moz-transition: color .3s;
+                transition: color .3s;
+            }
+
+            .cvitae-about-me .links a:hover i {
+                color: #00A4EF;
+            }
+
+
+@media (max-width: 991px) {
+ 
+    .cvitae-about-me .content-left {
+        border: 0;
+        padding: 50px;
+    }
+
+        .cvitae-about-me .content-left .pic {
+            margin: 0;
+        }
+
+            .cvitae-about-me .content-left .pic img {
+                margin-bottom: 30px;
+            }
+
+    .cvitae-about-me .links {
+        display: table;
+        width: 100%;
+    }
+
+        .cvitae-about-me .links a {
+            box-shadow: 0 1px 0 0 #f2f2f2, -1px 0 0 0 #f2f2f2 inset;
+            display: table-cell;
+            width: 50px;
+        }
+
+            .cvitae-about-me .links a:first-child {
+                box-shadow: 1px 0 0 0 #f2f2f2, 0 1px 0 0 #f2f2f2, 1px 0 0 0 #f2f2f2 inset;
+            }
+}
+
+@media (max-width: 767px) {
+    .cvitae-about-me .info span {
+        display: block;
+        position: relative;
+    }
+
+    .cvitae-about-me .info .field-title {
+        width: auto;
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    .cvitae-about-me .info .field-separator {
+        display: none;
+    }
+}

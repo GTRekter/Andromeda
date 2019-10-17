@@ -1,0 +1,439 @@
+@font-face {
+    font-family: 'ubuntu';
+    src: url('fonts/Ubuntu-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ubuntu';
+    src: url('fonts/Ubuntu-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ubuntu';
+    src: url('fonts/Ubuntu-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* 
+ * --------------------------------------
+ * CSS Reset  
+ * --------------------------------------
+ */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+    blockquote:before,
+    blockquote:after,
+    q:before,
+    q:after {
+        content: '';
+        content: none;
+    }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+strong {
+    font-weight: 700;
+}
+
+
+/* 
+ * --------------------------------------
+ * Basic Styles
+ * --------------------------------------
+ */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+    *:before,
+    *:after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+html,
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 100px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+h6 {
+    font-size: 14px;
+}
+
+p {
+    color: #818181;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: #707070;
+}
+
+    a:hover,
+    a:focus {
+        outline: none;
+    }
+
+
+/* 
+ * --------------------------------------
+ * CVitae Classes
+ * --------------------------------------
+ */
+
+.img-responsive {
+    height: auto;
+    max-width: 100%;
+}
+
+.material-tooltip {
+    font-family: 'Ubuntu';
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    padding: 10px 15px;
+    text-transform: lowercase;
+}
+
+.toast {
+    background-color: #00A4EF;
+}
+
+.cvitae-section {
+    background: #fff;
+    margin-bottom: 90px;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+}
+
+.cvitae-section-title {
+    color: #00A4EF;
+    letter-spacing: 2px;
+    padding-bottom: 70px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+    .cvitae-section-title:before {
+        background: #00A4EF;
+        border-radius: 15px 0 30px 15px;
+        content: '';
+        display: block;
+        height: 15px;
+        position: absolute;
+        top: 50px;
+        width: 40px;
+    }
+
+.cvitae-section-content {
+    border-collapse: collapse;
+    border: 1px solid #f2f2f2;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .05);
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+    .cvitae-section-content .content-right,
+    .cvitae-section-content .content-left {
+        display: table-cell;
+        overflow: hidden;
+        padding: 70px 50px;
+        position: relative;
+        z-index: 0;
+    }
+
+    .cvitae-section-content .content-left {
+        vertical-align: top;
+        width: 35.4%;
+    }
+
+        .cvitae-section-content .content-left p {
+            color: #717171;
+            margin-bottom: 30px;
+        }
+
+            .cvitae-section-content .content-left p:last-child,
+            .cvitae-section-content .content-left p:only-child {
+                margin-bottom: 0;
+            }
+
+    .cvitae-section-content .content-right {
+        vertical-align: middle;
+        width: 64.6%;
+    }
+
+.waves-effect.waves-cvitae .waves-ripple {
+    background-color: rgba(254, 184, 52, .2);
+}
+
+.dark {
+    background-color: #3a3a3a;
+}
+
+/* 
+ * --------------------------------------
+ * Responsive
+ * --------------------------------------
+ */
+
+@media (max-width: 991px) {
+    .cvitae-section-content {
+        display: block;
+        width: 100%;
+    }
+
+        .cvitae-section-content .content-right,
+        .cvitae-section-content .content-left {
+            display: block;
+        }
+
+        .cvitae-section-content .content-left {
+            width: 100%;
+        }
+
+        .cvitae-section-content .content-right {
+            width: 100%;
+        }
+
+    .slider .slider-overlay .slider-content .second-line {
+        font-size: 25px;
+    }
+
+    .site-content .nav-links {
+        display: block;
+    }
+
+        .site-content .nav-links .nav-previous,
+        .site-content .nav-links .nav-next {
+            display: block;
+            margin-bottom: 30px;
+            width: 100%;
+            padding: 0;
+        }
+
+            .site-content .nav-links .nav-previous:before {
+                display: none;
+            }
+
+            .site-content .nav-links .nav-next:after {
+                display: none;
+            }
+
+    .site-content nav .nav-links a {
+        font-size: 20px;
+        white-space: normal;
+        padding: 0;
+    }
+}
+@media (max-width: 767px) {
+
+    .site-content .post-info p {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+        .site-content .post-info p:last-child {
+            margin-bottom: 0;
+        }
+
+    .site-content .social-share p {
+        margin-bottom: 20px;
+        display: block;
+    }
+
+    .site-content .social-share ul {
+        display: block;
+    }
+
+        .site-content .social-share ul li a {
+            padding: 0 10px 0 0 !important;
+            margin: 0;
+        }
+
+    .site-content .other-meta .cat-links,
+    .site-content .other-meta .tags-links {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+        .site-content .other-meta .cat-links a {
+            text-transform: capitalize;
+            padding: 0 5px;
+        }
+
+        .site-content .other-meta .tags-links a {
+            text-transform: lowercase;
+            padding: 0 5px;
+        }
+
+    .site-content .comment-respond .row .s6 {
+        width: 100%;
+    }
+
+    .site-content .comment-respond {
+        margin-bottom: 70px;
+    }
+}
